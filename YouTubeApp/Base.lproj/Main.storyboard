@@ -19,6 +19,67 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Br7-mR-leg">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="355" id="qpE-Yq-1GW" customClass="VideoTableViewCell" customModule="YouTubeApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="355"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qpE-Yq-1GW" id="jb7-Wq-vNl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fYq-FF-FgU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="210" id="bFe-BO-8KZ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#music " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQH-fQ-FLa">
+                                                    <rect key="frame" x="26" y="215" width="323" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dua Lipa - One Kiss" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeH-pj-gaW">
+                                                    <rect key="frame" x="26" y="233.5" width="323" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dua Lipa - Vevo - 1M views - 1 week ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hQ-G4-Hdz">
+                                                    <rect key="frame" x="26" y="256.5" width="323" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jQH-fQ-FLa" secondAttribute="trailing" constant="10" id="1yf-4g-s8p"/>
+                                                <constraint firstAttribute="trailing" secondItem="fYq-FF-FgU" secondAttribute="trailing" id="2cS-eP-Loy"/>
+                                                <constraint firstItem="fYq-FF-FgU" firstAttribute="leading" secondItem="jb7-Wq-vNl" secondAttribute="leading" id="5Ol-8F-41s"/>
+                                                <constraint firstItem="jQH-fQ-FLa" firstAttribute="top" secondItem="fYq-FF-FgU" secondAttribute="bottom" constant="5" id="7nG-W7-Js3"/>
+                                                <constraint firstItem="fYq-FF-FgU" firstAttribute="top" secondItem="jb7-Wq-vNl" secondAttribute="top" id="ABu-ZD-9ko"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5hQ-G4-Hdz" secondAttribute="trailing" constant="10" id="BvH-lr-8P0"/>
+                                                <constraint firstItem="5hQ-G4-Hdz" firstAttribute="top" secondItem="UeH-pj-gaW" secondAttribute="bottom" constant="5" id="EeO-Va-Plk"/>
+                                                <constraint firstItem="jQH-fQ-FLa" firstAttribute="leading" secondItem="jb7-Wq-vNl" secondAttribute="leadingMargin" constant="10" id="Kfg-7s-DJr"/>
+                                                <constraint firstItem="UeH-pj-gaW" firstAttribute="top" secondItem="jQH-fQ-FLa" secondAttribute="bottom" constant="5" id="aE3-ZY-4bA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UeH-pj-gaW" secondAttribute="trailing" constant="10" id="f4B-yI-qMt"/>
+                                                <constraint firstItem="5hQ-G4-Hdz" firstAttribute="leading" secondItem="jb7-Wq-vNl" secondAttribute="leadingMargin" constant="10" id="sx2-Vq-wFu"/>
+                                                <constraint firstItem="UeH-pj-gaW" firstAttribute="leading" secondItem="jb7-Wq-vNl" secondAttribute="leadingMargin" constant="10" id="zWH-OL-204"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="img" destination="fYq-FF-FgU" id="4OZ-dW-k9N"/>
+                                            <outlet property="shortDescription" destination="5hQ-G4-Hdz" id="Ti5-ok-kT1"/>
+                                            <outlet property="tags" destination="jQH-fQ-FLa" id="ORI-6s-BQW"/>
+                                            <outlet property="title" destination="UeH-pj-gaW" id="N7s-KI-b1a"/>
+                                            <segue destination="OPe-dU-lxx" kind="show" id="CcQ-w8-xbp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="uKr-Bn-SJc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="h5Q-Lt-1iT"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -30,7 +91,7 @@
                             <constraint firstItem="Br7-mR-leg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w3f-T8-5gk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="YouTube App" id="mFa-eo-6eg">
+                    <navigationItem key="navigationItem" title="YouTube App" leftItemsSupplementBackButton="YES" id="mFa-eo-6eg">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="q76-ZG-ctn">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
@@ -38,10 +99,78 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Br7-mR-leg" id="9fA-1v-llu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2016.8" y="118.29085457271366"/>
+        </scene>
+        <!--YouTube App-->
+        <scene sceneID="kQ2-LD-NwR">
+            <objects>
+                <viewController id="OPe-dU-lxx" customClass="DetailViewController" customModule="YouTubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHD-yp-AfA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNF-fn-23h">
+                                <rect key="frame" x="0.0" y="44" width="375" height="270"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="LBR-8g-lnK"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dua Lipa - Vevo - 1M views - 1 week ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBb-l7-UHP">
+                                <rect key="frame" x="10" y="363" width="355" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#music " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-ss-0js">
+                                <rect key="frame" x="10" y="316" width="355" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dua Lipa - One Kiss" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVZ-QE-c4j">
+                                <rect key="frame" x="10" y="345" width="355" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GMH-EG-D4d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GMH-EG-D4d" firstAttribute="trailing" secondItem="dVZ-QE-c4j" secondAttribute="trailing" constant="10" id="9p3-Dy-2fu"/>
+                            <constraint firstItem="yNF-fn-23h" firstAttribute="top" secondItem="GMH-EG-D4d" secondAttribute="top" id="NqQ-nS-ItG"/>
+                            <constraint firstItem="yNF-fn-23h" firstAttribute="trailing" secondItem="GMH-EG-D4d" secondAttribute="trailing" id="Qrr-fU-pBn"/>
+                            <constraint firstItem="yNF-fn-23h" firstAttribute="leading" secondItem="GMH-EG-D4d" secondAttribute="leading" id="Wht-FD-hqA"/>
+                            <constraint firstItem="dVZ-QE-c4j" firstAttribute="leading" secondItem="GMH-EG-D4d" secondAttribute="leading" constant="10" id="Z2c-rA-49K"/>
+                            <constraint firstItem="dVZ-QE-c4j" firstAttribute="top" secondItem="dGn-ss-0js" secondAttribute="bottom" constant="15.5" id="a2u-dE-tvF"/>
+                            <constraint firstAttribute="trailing" secondItem="dGn-ss-0js" secondAttribute="trailing" constant="10" id="afO-DT-q62"/>
+                            <constraint firstItem="yNF-fn-23h" firstAttribute="centerX" secondItem="UHD-yp-AfA" secondAttribute="centerX" id="cr9-hY-lCk"/>
+                            <constraint firstItem="EBb-l7-UHP" firstAttribute="leading" secondItem="GMH-EG-D4d" secondAttribute="leading" constant="10" id="hhJ-6A-b9X"/>
+                            <constraint firstItem="dGn-ss-0js" firstAttribute="top" secondItem="yNF-fn-23h" secondAttribute="bottom" constant="2" id="nBx-Q9-JLZ"/>
+                            <constraint firstItem="dGn-ss-0js" firstAttribute="leading" secondItem="GMH-EG-D4d" secondAttribute="leading" constant="10" id="oOG-Dz-1GV"/>
+                            <constraint firstItem="GMH-EG-D4d" firstAttribute="trailing" secondItem="EBb-l7-UHP" secondAttribute="trailing" constant="10" id="sYg-oG-LNe"/>
+                            <constraint firstItem="EBb-l7-UHP" firstAttribute="top" secondItem="dVZ-QE-c4j" secondAttribute="bottom" id="xPa-80-kfB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="YouTube App" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="never" id="8c4-vd-iu0"/>
+                    <connections>
+                        <outlet property="webView" destination="yNF-fn-23h" id="cWX-nn-9yy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZB-TM-NRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="118"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kDm-9D-XFw">
@@ -49,6 +178,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Qu3-SY-n4H" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NNV-N6-PzC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,9 +217,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iHi-ZE-Iib">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.73333333329999995" green="0.88235294119999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" systemColor="labelColor"/>
@@ -105,6 +237,7 @@
             <point key="canvasLocation" x="1077.5999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
