@@ -1,6 +1,6 @@
 # Basic YouTube App
 
-![](YouTubeClone.gif)
+![](YouTubeApp/YouTubeClone.gif)
 
 ### Frameworks Used
 
