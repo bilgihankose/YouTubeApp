@@ -1,6 +1,6 @@
 # Basic YouTube App
 
-![](YouTubeApp/YouTubeClone.gif)
+![](YouTubeApp/YouTubeClone.gif = 320x)
 
 ### Frameworks Used
 
